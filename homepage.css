@@ -1,0 +1,175 @@
+.container{
+    width: 50vw;
+    height: 68vh;
+    background-color: #818a91;
+    margin: 10% auto;
+    padding: 20px;
+}
+.carousel {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width:700px;
+  margin:15px;
+  height: 100%;
+   border: 1px solid #ccc;
+   background: #f2f2f2;
+   box-shadow: 2px 3px 4px #ccc;
+
+}
+
+.carousel_prev, .carousel_next {
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  height: 100%;
+  width: 100px;
+}
+
+.carousel_prev {
+  left: 0;
+  display: none;
+}
+
+.carousel_next {
+  right: 0;
+  display: none;
+}
+
+.carousel_item {
+  position: absolute;
+  display: inline-block;
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  transition: all 1s ease;
+  transition: all 1s ease, all 1s ease, all 1s ease;
+}
+.carousel_itemImg {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.carousel_item .current {
+  display: block;
+  opacity:1;
+}
+
+
+.carousel_heading {
+  position: relative;
+  top: 50%;
+ 
+  padding: 10px;
+}
+.carousel_heading h3{
+   padding: 10 0px;
+   position: absolute;
+  text-decoration:underline;
+  color: #f10d15;
+}
+.carousel_heading h2,  {
+  padding: 10 0px;
+   position: absolute;
+    top: 73px;
+  color: #f0ad4e;
+}
+.carousel_heading h1 {
+  position: absolute;
+    top: 10px;
+    color:#3b82bf;
+}
+  .aTag{
+    position: absolute;
+    right: 85px;
+    text-decoration: underline;
+    color: red;
+    bottom: 73px;
+    }
+   .btnalign{ 
+   position: absolute;
+    bottom: 20px;
+    left:25px;   
+  }
+.carousel_heading .center{
+  text-align: center;
+}
+
+
+
+.btn,.btn_lg,.btn_info{
+  margin-right:10px;
+}
+
+@media (min-width: 768px) {
+  .carousel_prev::before {
+    position: relative;
+    top: 50%;
+    left: 20px;
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height:2em;
+    border-right: .4em solid white;
+    border-top: .4em solid white;
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+
+  .carousel_next::before {
+    position: relative;
+    top: 50%;
+    right: -20px;
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    border-right: .4em solid white;
+    border-top: .4em solid white;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+  .carousel{
+    height:400px;
+  }
+
+  ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+  }
+
+  
+
+  .carousal_indicator_wrapper{
+    right: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom:10px;
+  }
+ .dots_active{
+  background:black;
+  margin-right:5px;
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border-radius:10px;
+  }
+  .dots{
+  background:orange;
+  margin-right:5px;
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border-radius:10px;
+  }
+}
